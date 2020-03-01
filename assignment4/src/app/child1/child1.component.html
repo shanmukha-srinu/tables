@@ -1,0 +1,9 @@
+<div> 
+    <input type="text" [(ngModel)]="value"  placeholder="Enter input here">
+    <button (click)="on_create_tables()">Generate Multiplication Table</button>
+    <br>
+    <br>
+      <div *ngFor="let j of temp" >
+         <div  *ngFor="let i of tablenumbers">{{j}} * {{i}} = {{i*j}}</div>
+      </div>
+</div>
